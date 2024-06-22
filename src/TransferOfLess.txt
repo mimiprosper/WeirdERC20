@@ -1,0 +1,3 @@
+Some tokens (e.g., cUSDCv3) contain a special case for amount == type(uint256).max in their transfer functions that results in only the user's balance being transferred.
+
+This may cause issues with systems that transfer a user-supplied amount to their contract and then credit the user with the same value in storage (e.g., Vault-type systems) without checking the amount that has actually been transferred.

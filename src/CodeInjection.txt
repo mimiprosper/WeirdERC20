@@ -1,0 +1,1 @@
+Some malicious tokens have been observed to include malicious javascript in their name attribute, allowing attackers to extract private keys from users who choose to interact with these tokens via vulnerable frontends.
